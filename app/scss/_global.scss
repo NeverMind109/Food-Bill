@@ -50,3 +50,47 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 49px;
     color: #000000;
 }
+.menu {
+    &__list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__item-link {
+        font-family: 'ProductSans-Regular', sans-serif;
+        font-weight: 400;
+        line-height: 19px;
+        color: #000000;
+        margin-right: 27px;
+        &:last-child {
+            margin-right: 30px;
+        }
+        &:hover {
+            color: #F16214;
+        }
+    }
+}
+.button-label {
+    color: #FFFFFF;
+    background: #F16214;
+    border: none;
+    cursor: pointer;
+}
+.button-link {
+    position: relative;
+    color: #FFFFFF;
+    background: #F16214;
+    border-radius: 54px;
+    padding: 13px 64px 13px 16px;
+    &::after {
+        content: '';
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        top: 5px;
+        right: 5px;
+        background: url('../images/link-button-arrow.svg') no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+}
