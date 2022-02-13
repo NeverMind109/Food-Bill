@@ -1,0 +1,99 @@
+.reviews {
+    background: url('../../images/reviews-bg.png') no-repeat;
+    background-position: top left;
+    background-size: 15%;
+    &__wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    &__upper-title {
+        display: block;
+        margin-bottom: 6px;
+    }
+    &__title {
+        text-align: center;
+    }
+    &__slider {
+        position: relative;
+        max-width: 570px;
+        margin-right: 30px;
+        margin-top: 120px;
+    }
+    &__slider-buttons {
+        position: absolute;
+        bottom: 0;
+        background-color: #fff;
+        border: 1.5px solid #EEEEEE;
+        border-radius: 10px;
+        padding: 20px 14px;
+        cursor: pointer;
+    }
+    &__slider-next {
+        right: 37%;
+        &:hover {
+            border: 1.5px solid #F16214;
+            background-color: #F16214;
+            .reviews__slider-arrow {
+                fill: #fff;
+            }
+            .reviews__slider-line {
+                stroke: #fff;
+            }
+        }
+    }
+    &__slider-prev {
+        left: 37%;
+        svg {
+            transform: rotate(180deg);
+        }
+        &:hover {
+            border: 1.5px solid #F16214;
+            background-color: #F16214;
+            .reviews__slider-arrow {
+                fill: #fff;
+            }
+            .reviews__slider-line {
+                stroke: #fff;
+            }
+        }
+    }
+    &__slide {
+        display: flex;
+        flex-direction: column;
+        padding: 0 10px;
+    }
+    &__slide-profile {
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto 54px 35%;
+    }
+    &__slide-avatar {
+        img {
+            border-radius: 50%;
+            object-fit: cover;
+        }
+    }
+    &__slide-author {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 15px;
+    }
+    &__slide-name {
+        line-height: 19px;
+        color: #000000;
+        margin-bottom: 3px;
+    }
+    &__slide-position {
+        font-family: 'ProductSans-Regular', sans-serif;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 16px;
+    }
+    &__slide-text {
+        font-family: 'ProductSans-Regular', sans-serif;
+        font-weight: 400;
+        text-align: center;
+    }
+}
