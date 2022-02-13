@@ -44,6 +44,8 @@
         padding: 0 135px 0 20px;
         color: #CCCCCC;
         border-radius: 13px;
+        overflow-x: hidden;
+        border: none;
         &::placeholder {
             font-family: 'ProductSans-Regular', sans-serif;
             font-weight: 400;
