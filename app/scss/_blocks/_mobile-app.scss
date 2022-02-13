@@ -1,0 +1,87 @@
+.mobile-app {
+    padding: 230px 0;
+    &__wrapper {
+        background: url('../../images/mobile-app-bg.jpg') no-repeat;
+        background-size: cover;
+        background-position: center;
+        border-radius: 60px 0px;
+        width: 100%;
+        max-height: 400px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__text-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        max-width: 50%;
+        padding-top: 86px;
+        margin-left: 30px;
+    }
+    &__title {
+        max-width: 320px;
+        color: #FFFFFF;
+        margin: 0 0 50px;
+    }
+    &__links {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    &__link {
+        display: flex;
+        align-items: center;
+        background: #FFFFFF;
+        width: 220px;
+        border-radius: 13px;
+        padding: 20px 30px;
+        &:first-child {
+            margin-right: 20px;
+        }
+    }
+    &__icon {
+        height: 40px;
+        margin-right: auto;
+    }
+    &__description {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        color: #000000;
+
+    }
+    &__supheading {
+        font-size: 11px;
+        line-height: 13px;
+        margin-bottom: 10px;
+    }
+    &__heading {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    &__img-wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        max-width: 635px;
+        margin-right: 44px;
+    }
+    &__img {
+        width: 277px;
+        height: 600px;
+        box-shadow: 20px 28px 90px -15px rgba(0, 0, 0, 0.2);
+        border-radius: 50px;
+    }
+    &__main-page {
+        background: url('../../images/mobile-app-img-1.jpg') no-repeat;
+        background-size: cover;
+        background-position: top;
+        margin: -60px 40px 0 0;
+    }
+    &__food-details {
+        background: url('../../images/mobile-app-img-2.jpg') no-repeat;
+        background-size: cover;
+        background-position: top;
+        margin-bottom: -60px;
+    }
+}
