@@ -27,5 +27,11 @@
         font-family: 'ProductSans-Regular', sans-serif;
         font-weight: 400;
         margin-bottom: 29px;
+        word-break: break-word;
+    }
+    &__btn {
+        &:hover {
+            box-shadow: 0px 20px 25px rgba(0, 0, 0, 0.5);
+        }
     }
 }

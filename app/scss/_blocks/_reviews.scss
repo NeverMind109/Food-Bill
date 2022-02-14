@@ -17,12 +17,11 @@
     &__slider {
         position: relative;
         max-width: 570px;
-        margin-right: 30px;
-        margin-top: 120px;
+        margin: 120px 30px 65px 0;
     }
     &__slider-buttons {
         position: absolute;
-        bottom: 0;
+        bottom: -18%;
         background-color: #fff;
         border: 1.5px solid #EEEEEE;
         border-radius: 10px;
@@ -95,5 +94,6 @@
         font-family: 'ProductSans-Regular', sans-serif;
         font-weight: 400;
         text-align: center;
+        word-break: break-word;
     }
 }

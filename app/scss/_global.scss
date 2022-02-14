@@ -38,7 +38,10 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 auto;
 }
 .section {
-    margin: 100px 0;
+    padding: 100px 0;
+}
+.section-margin {
+    padding: 100px 0;
 }
 .section__upper-title {
     font-size: 14px;
@@ -51,6 +54,9 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 49px;
     color: #000000;
     margin: 0 auto;
+}
+.uppercase {
+    text-transform: uppercase;
 }
 .logo {
     margin-right: auto;
@@ -99,4 +105,20 @@ h1, h2, h3, h4, h5, h6 {
         background-position: center;
         background-size: contain;
     }
+}
+label.newsletter-invalid{
+    display: inline-block;
+    max-width: 400px;
+    color: #F16214;
+    font-size: 15px;
+    line-height: 17px;
+    margin: 10px 0;
+}
+label.footer-invalid{
+    display: inline-block;
+    max-width: 270px;
+    color: #F16214;
+    font-size: 13px;
+    line-height: 15px;
+    margin: 10px 0;
 }

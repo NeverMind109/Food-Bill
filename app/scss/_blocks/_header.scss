@@ -16,7 +16,7 @@
             line-height: 16px;
             border: 1.5px solid #F16214;
             border-radius: 120px;
-            padding: 5px 17px 6px 16px;
+            padding: 6px 17px 6px 16px;
 		}
 }
 .header-bottom {
@@ -37,6 +37,9 @@
 		}
 		&__start {
 			margin-bottom: 40px;
+			&:hover {
+				box-shadow: 0px 20px 25px rgba(0, 0, 0, 0.5);
+			}
 		}
 		&__social {
 			margin-bottom: 110px;
