@@ -1,6 +1,6 @@
 .newsletter {
     &__wrapper {
-        background: url('../../images/offer-bg.jpg') no-repeat;
+        background: url('../images/offer-bg.jpg') no-repeat;
         background-size: cover;
         background-position: center;
         border-radius: 60px 0px;
@@ -13,7 +13,7 @@
     &__image {
         height: 460px;
         width: 460px;
-        background: url('../../images/hamburger.png') no-repeat;
+        background: url('../images/hamburger.png') no-repeat;
         background-size: cover;
         background-position: center;
         margin: -100px 0 0 0;

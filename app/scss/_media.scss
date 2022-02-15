@@ -166,16 +166,58 @@
             margin: -16px 0 0 0;
         }
     }
+    .modal {
+        &-overlay {
+            display: none;
+        }
+        &-register {
+            width: 100%;
+            min-height: 100vh;
+            padding: 75px 100px 15px;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            transform: translate(0);
+            overflow-y: scroll;
+            &__title {
+                font-size: 32px;
+                line-height: 35px;
+            }
+            &__input {
+                width: 100%;
+                margin-top: 20px;
+            }
+            &__btn {
+                padding: 15px 25px;
+                margin: 25px 0;
+            }
+        }
+        &-close {
+            top: 25px;
+            right: 25px;
+            width: 40px;
+            height: 40px;
+            &::before {
+                height: 40px;
+                left: 20px;
+            }
+            &::after {
+                height: 40px;
+                left: 20px;
+            }
+        }
+    }
 }
 @media (max-width: 900px) {
     .section {
         padding: 50px 0;
     }
     .section-margin {
-        padding: 50px 0;
+        margin: 50px 0;
     }
     .how-to {
-        padding: 50px 0;
+        padding: 30px 0;
     }
     .mobile-app {
         padding: 100px 0;
@@ -393,7 +435,7 @@
     .how-to {
         background-size: 55%;
         background-position: center left -80px;
-        padding: 75px 0;
+        padding: 65px 0;
         &__wrapper {
             max-width: 70%;
         }
@@ -545,6 +587,17 @@
             margin-top: 50px;
         }
     }
+    .modal {
+        &-register {
+            width: 100%;
+            min-height: 100vh;
+            padding: 50px 30px 15px;
+            &__title {
+                font-size: 26px;
+                line-height: 28px;
+            }
+        }
+    }
 }
 @media (max-width: 500px) {
     body {
@@ -555,7 +608,7 @@
         padding: 25px 0;
     }
     .section-margin {
-        padding: 25px 0;
+        margin: 25px 0;
     }
     .mobile-app {
         padding: 75px 0;
@@ -677,6 +730,25 @@
         }
         &__show-more {
             margin: 15px auto 0;
+        }
+    }
+    .modal {
+        &-register {
+            padding: 35px 20px 15px;
+        }
+        &-close {
+            top: 15px;
+            right: 15px;
+            width: 30px;
+            height: 30px;
+            &::before {
+                height: 30px;
+                left: 15px;
+            }
+            &::after {
+                height: 30px;
+                left: 15px;
+            }
         }
     }
 }

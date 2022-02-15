@@ -42,7 +42,13 @@
                 <a class="menu__item-link scroll-to" href="#contact">Contact</a>
               </li>
               <li class="menu__item menu__item-register">
-                <a class="menu__item-link" href="#"> Register </a>
+                <button
+                  class="menu__item-link menu__item-link-register"
+                  data-href="#register"
+                  data-toggle="register"
+                >
+                  Register
+                </button>
               </li>
             </ul>
           </nav>
@@ -65,7 +71,12 @@
               />
             </svg>
           </button>
-          <button class="button-label header-top__button" type="button">
+          <button
+            class="button-label header-top__button"
+            type="button"
+            data-href="#register"
+            data-toggle="register"
+          >
             Register
           </button>
         </div>
@@ -166,7 +177,7 @@
         </div>
       </div>
     </header>
-    <section class="how-to" id="how-to">
+    <section class="section-margin how-to" id="how-to">
       <div class="container">
         <div class="how-to__wrapper">
           <span class="section__upper-title how-to__upper-title"
@@ -188,7 +199,7 @@
         </div>
       </div>
     </section>
-    <section class="section services" id="services">
+    <section class="section-margin services" id="services">
       <div class="container">
         <div class="services__wrapper">
           <span class="section__upper-title services__upper-title"
@@ -737,6 +748,53 @@
         </div>
       </div>
     </footer>
+    <div class="modal" id="register">
+      <div class="modal-overlay"></div>
+      <div class="modal-register">
+        <a class="modal-close" href="#"></a>
+        <span class="modal-register__title">Register</span>
+        <form class="modal-register__form" action="#">
+          <input
+            class="modal-register__input modal-register__login"
+            type="text"
+            name="name"
+            placeholder="Enter your name"
+            minlength="2"
+            required
+          />
+          <input
+            class="modal-register__input modal-register__email"
+            type="email"
+            name="email"
+            placeholder="Enter your email"
+            minlength="10"
+            required
+          />
+          <input
+            class="modal-register__input modal-register__password"
+            type="password"
+            name="password"
+            placeholder="Enter your password"
+            minlength="6"
+            maxlength="25"
+            required
+          />
+          <span class="modal-register__info"
+            >By clicking Sign Up, you are indicating that you have read and
+            acknowledge the
+            <a class="modal-register__link" href="#">Terms of Service</a> and
+            <a class="modal-register__link" href="#">Privacy Notice.</a></span
+          >
+          <button class="button-label modal-register__btn" type="submit">
+            Sign Up
+          </button>
+          <span class="modal-register__log-in" href="#"
+            >Already have an account?
+            <a class="modal-register__link" href="#">Sign In</a></span
+          >
+        </form>
+      </div>
+    </div>
     <script src="js/main.min.js"></script>
   </body>
 </html>

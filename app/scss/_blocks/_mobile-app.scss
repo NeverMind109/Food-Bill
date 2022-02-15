@@ -1,7 +1,7 @@
 .mobile-app {
     padding: 230px 0;
     &__wrapper {
-        background: url('../../images/offer-bg.jpg') no-repeat;
+        background: url('../images/offer-bg.jpg') no-repeat;
         background-size: cover;
         background-position: center;
         border-radius: 60px 0px;
@@ -73,13 +73,13 @@
         border-radius: 50px;
     }
     &__main-page {
-        background: url('../../images/mobile-app-img-1.jpg') no-repeat;
+        background: url('../images/mobile-app-img-1.jpg') no-repeat;
         background-size: cover;
         background-position: top;
         margin: -60px 40px 0 0;
     }
     &__food-details {
-        background: url('../../images/mobile-app-img-2.jpg') no-repeat;
+        background: url('../images/mobile-app-img-2.jpg') no-repeat;
         background-size: cover;
         background-position: top;
         margin-bottom: -60px;

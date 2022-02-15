@@ -16,7 +16,6 @@ body {
     overflow-x: hidden;
     margin: 0;
     padding: 0;
-
 }
 a {
     display: inline-block;
@@ -44,7 +43,7 @@ p {
     padding: 100px 0;
 }
 .section-margin {
-    padding: 100px 0;
+    margin: 100px 0;
 }
 .section__upper-title {
     font-size: 14px;
@@ -60,6 +59,9 @@ p {
 }
 .uppercase {
     text-transform: uppercase;
+}
+.overflow-hidden {
+    overflow: hidden;
 }
 .logo {
     margin-right: auto;
@@ -86,6 +88,11 @@ p {
     }
     &__item-register {
         display: none;
+    }
+    &__item-link-register {
+        border: none;
+        background-color: transparent;
+        padding: 0;
     }
     &-mobile {
         display: none;
@@ -157,4 +164,13 @@ label.footer-invalid{
     font-size: 13px;
     line-height: 15px;
     margin: 10px 0;
+}
+label.register-invalid {
+    display: inline-block;
+    max-width: 300px;
+    text-align: left;
+    color: #F16214;
+    font-size: 15px;
+    line-height: 17px;
+    margin: 10px auto 0 0;
 }

@@ -45,11 +45,56 @@ $(function () {
       },
     });
   });
+  $(".modal-register__form").each(function () {
+    $(this).validate({
+      errorClass: "register-invalid",
+      messages: {
+        name: {
+          minlength: "Your name should be longer than 2 symbols",
+          required: "Please enter your name",
+        },
+        password: {
+          minlength: "Your password should be longer than 6 symbols",
+          maxlength: "Your password cannot be longer than 25 symbols",
+          required: "Please enter your password",
+        },
+        email: {
+          email: "Enter an email in the correct format, like name@domain.com",
+          minlength: "Your email should be longer than 10 symbols",
+          required: "Please enter your email",
+        },
+      },
+    });
+  });
 
   $(".menu-mobile").on("click", function () {
     $(".menu").toggleClass("menu--active");
+    document.body.classList.add("overflow-hidden");
     $(".menu__item-link").on("click", function () {
       $(".menu").removeClass("menu--active");
+      document.body.classList.remove("overflow-hidden");
     });
   });
+
+  var openModalRegister = $("[data-toggle=register]");
+  var overlayClick = $(".modal-close");
+  var closeModalRegister = $(".modal-overlay");
+  openModalRegister.on("click", openModal);
+  closeModalRegister.on("click", closeModal);
+  overlayClick.on("click", closeModal);
+
+  function openModal() {
+    var targetModal = $(this).attr("data-href");
+    $(targetModal).find(".modal-overlay").addClass("modal-overlay--visible");
+    $(targetModal).find(".modal-register").addClass("modal-register--visible");
+    document.body.classList.add("overflow-hidden");
+  }
+  function closeModal(event) {
+    event.preventDefault();
+    var modalOverlay = $(".modal-overlay");
+    var modalDialog = $(".modal-register");
+    modalOverlay.removeClass("modal-overlay--visible");
+    modalDialog.removeClass("modal-register--visible");
+    document.body.classList.remove("overflow-hidden");
+  }
 });
