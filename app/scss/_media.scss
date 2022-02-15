@@ -1,0 +1,682 @@
+@media (max-width: 1400px) {
+    .product {
+        &__cards {
+            justify-content: end;
+        }
+        &__card {
+            flex-basis: 45%;
+        }
+    }
+}
+@media (max-width: 1200px) {
+    .container {
+        max-width: 100%;
+    }
+    .header {
+        background-position: top 75px right;
+        background-size: 60% 47%;
+    }
+    .header-bottom {
+        &__title {
+			font-size: 60px;
+			line-height: 75px;
+            margin: 70px 0 15px;
+		}
+        &__restaurant-info {
+			&-decorated {
+				&::before {
+					left: -50px;
+				}
+				&::after {
+					right: -50px;
+				}
+			}
+		}
+    }
+    .how-to {
+        background-size: 50%;
+        padding: 100px 0;
+    }
+    .services {
+        &__card {
+            max-width: 300px;
+            padding: 50px 10px;
+        }
+    }
+    .mobile-app {
+        &__text-wrapper {
+            max-width: 60%;
+            margin-left: 45px;
+        }
+        &__img-wrapper {
+            max-width: 330px;
+            margin-right: 0;
+        }
+        &__img {
+            width: 250px;
+            height: 580px;
+        }
+        &__main-page {
+            margin: -40px 80px 0 0;
+        }
+        &__food-details {
+            display: none;
+        }
+    }
+    .reviews {
+        &__slider {
+            max-width: 400px;
+            margin: 100px 30px 65px 0;
+        }
+        &__dish {
+            width: 500px;
+            height: 420px;
+            img {
+                width: 500px;
+                height: 420px;
+            }
+        }
+        &__slider-buttons {
+            bottom: -27%;
+        }
+    }
+    .newsletter {
+        &__wrapper {
+            padding: 0 50px 0 20px;
+        }
+        &__image {
+            height: 400px;
+            width: 400px;
+            margin: -55px 0 0 0;
+        }
+    }
+    .footer {
+        &__wrapper {
+            flex-wrap: wrap;
+        }
+        &__division {
+            &-one {
+                width: 40%;
+                margin-right: 0;
+                margin-left: auto;
+                margin-bottom: 30px;
+            }
+            &-two {
+                width: 40%;
+                margin-right: auto;
+                margin-bottom: 30px;
+            }
+            &-three {
+                width: 40%;
+                margin-left: auto;
+                margin-right: 0;
+            }
+            &-four {
+                width: 40%;
+                margin-right: auto;
+            }
+        }
+    }
+}
+@media (max-width: 1000px) {
+    .services {
+        &__cards {
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        &__card {
+            max-width: 70%;
+            margin-bottom: 20px;
+            padding: 25px 10px;
+        }
+    }
+    .reviews {
+        &__wrapper {
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        &__slider {
+            max-width: 90%;
+            margin: 70px 0 75px 0;
+        }
+        &__slide-profile {
+            margin: 0 auto 54px 39%;
+        }
+        &__dish {
+            width: 569px;
+            height: 483px;
+            img {
+                width: 569px;
+                height: 483px;
+            }
+        }
+    }
+    .reviews {
+        background: none;
+    }
+    .newsletter {
+        &__wrapper {
+            padding: 0 50px 0 10px;
+        }
+        &__image {
+            height: 300px;
+            width: 300px;
+            margin: -16px 0 0 0;
+        }
+    }
+}
+@media (max-width: 900px) {
+    .section {
+        padding: 50px 0;
+    }
+    .section-margin {
+        padding: 50px 0;
+    }
+    .how-to {
+        padding: 50px 0;
+    }
+    .mobile-app {
+        padding: 100px 0;
+    }
+    .header {
+        background: none;
+    }
+    .header-top {
+        max-width: 100%;
+            &__button {
+                display: none;
+            }
+            &__shopping-cart {
+                margin-right: 0;
+                margin-left: 15px;
+            }
+    }
+    .header-bottom {
+        &__description {
+			max-width: 100%;
+		}
+        &__restaurant-info {
+			&-decorated {
+				&::before {
+					left: -25px;
+				}
+				&::after {
+					right: -25px;
+				}
+			}
+		}
+        &__social {
+			margin-bottom: 50px;
+        }
+    }
+    .menu {
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        padding-top: 15px;
+        height: 100vh;
+        min-width: 320px;
+        top: 100px;
+        left:0;
+        right:0;
+        bottom: 0;
+        background-color: #F16214;
+        transform: translateY(-300%);
+        transition-duration: .2s;
+        transition-timing-function: ease;
+        z-index: 20;
+        &__list {
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+        }
+        &__item {
+            align-items: flex-start;
+            padding: 13px 0 15px;
+        }
+        &__item-register {
+            display: flex;
+            padding: 35px 0;
+        }
+        &__item-link {
+            font-size: 24px;
+            line-height: 28px;
+            margin-right: 0;
+            color: #fff;
+            &:last-child {
+                margin-right: 0;
+            }
+            &:hover {
+                color: #fff;
+            }
+        }
+        &--active {
+            transform: translateY(0);
+        }
+    }
+    .menu-mobile {
+        display: flex;
+        order: 1;
+    }
+    .shopping-cart {
+        order: 2;
+    }
+    .section__upper-title {
+        font-size: 13px;
+        line-height: 15px;
+    }
+    .section__title {
+        font-size: 32px;
+        line-height: 40px;
+        text-align: center;
+    }
+    .how-to {
+        &__wrapper {
+            max-width: 60%;
+        }
+        &__header {
+            margin-bottom: 20px;
+        }
+        &__upper-title {
+            text-align: center;
+            margin: 0 auto;
+        }
+    }
+    .product {
+        &__title {
+            margin-bottom: 30px;
+        }
+        &__card-img {
+            max-width: 280px;
+            img {
+                width: 280px;
+                height: 240px;
+            }
+        }
+        &__card-description {
+            max-width: 280px;
+            padding: 15px 15px 30px;
+        }
+    }
+    .mobile-app {
+        &__text-wrapper {
+            max-width: 60%;
+            padding-top: 50px;
+            margin-left: 30px;
+        }
+        &__title {
+            margin: 0 0 30px;
+        }
+        &__links {
+            flex-direction: column;
+            margin: 0 auto;
+        }
+        &__link {
+            display: flex;
+            align-items: center;
+            background: #FFFFFF;
+            width: 220px;
+            border-radius: 13px;
+            padding: 20px 30px;
+            &:first-child {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+        }
+        &__supheading {
+            margin-bottom: 8px;
+        }
+        &__main-page {
+            margin: -30px 30px 0 0;
+        }
+    }
+    .newsletter {
+        &__wrapper {
+            padding: 0 60px;
+            justify-content: center;
+        }
+        &__image {
+            display: none;
+        }
+        &__information {
+            max-width: 100%;
+            padding-top: 30px;
+        }
+    }
+}
+@media (max-width: 700px) {
+    .mobile-app {
+        padding: 50px 0;
+    }
+    .footer {
+        &__wrapper {
+            padding: 50px 0;
+        }
+    }
+    .header-bottom {
+        &__title {
+			font-size: 55px;
+			line-height: 60px;
+            margin: 75px 0 15px;
+            text-align: center;
+		}
+		&__text {
+			margin-bottom: 30px;
+		}
+        &__start {
+			margin: 0 auto 50px;
+		}
+		&__social {
+            margin: 0 auto 50px;
+        }
+        &__restaurant {
+			display: flex;
+            flex-direction: column;
+            align-items: center;
+			height: auto;
+		}
+        &__restaurant-info {
+            margin-bottom: 20px;
+			&-decorated {
+				position: relative;
+				&::before {
+					display: none;
+				}
+				&::after {
+					display: none;
+				}
+			}
+		}
+    }
+    .how-to {
+        background-size: 55%;
+        background-position: center left -80px;
+        padding: 75px 0;
+        &__wrapper {
+            max-width: 70%;
+        }
+    }
+    .product {
+        &__card-img {
+            max-width: 240px;
+            img {
+                width: 240px;
+                height: 190px;
+            }
+        }
+        &__card-description {
+            max-width: 240px;
+            padding: 10px 10px 20px;
+        }
+        &__show-more {
+            margin: 30px auto 0;
+        }
+    }
+    .mobile-app {
+        &__text-wrapper {
+            max-width: 100%;
+            padding-top: 50px;
+            margin: 0 auto;
+        }
+        &__title {
+            width: 100%;
+        }
+        &__img-wrapper {
+            margin: 0;
+        }
+        &__main-page {
+            display: none;
+        }
+    }
+    .reviews {
+        &__slider {
+            max-width: 100%;
+            margin: 50px 0 65px 0;
+        }
+        &__slide-profile {
+            margin: 0 auto 35px 39%;
+        }
+        &__dish {
+            margin-top: 15px;
+            width: 450px;
+            height: 420px;
+            img {
+                width: 450px;
+                height: 420px;
+            }
+        }
+        &__slider-buttons {
+            bottom: -30%;
+        }
+    }
+    .footer {
+        &__wrapper {
+            flex-direction: column;
+        }
+        &__division {
+            &-one {
+                min-width: 320px;
+                margin: 0 auto 40px;
+            }
+            &-two {
+                min-width: 320px;
+                margin: 0 auto 40px;
+            }
+            &-three {
+                min-width: 320px;
+                margin: 0 auto 40px;
+            }
+            &-four {
+                min-width: 320px;
+                margin: 0 auto;
+            }
+        }
+        &__division-heading {
+            margin-bottom: 20px;
+        }
+    }
+}
+@media (max-width: 600px) {
+    .how-to {
+        background: none;
+        &__wrapper {
+            max-width: 100%;
+            margin: 0 auto;
+        }
+        &__btn {
+            margin: 0 auto;
+        }
+    }
+    .services {
+        &__title {
+            margin-bottom: 30px;
+        }
+        &__card {
+            max-width: 90%;
+            padding: 20px 10px;
+        }
+        &__card-image {
+            margin-bottom: 15px;
+        }
+        &__card-advantage {
+            font-size: 24px;
+            line-height: 30px;
+            margin-bottom: 15px;
+        }
+        &__card-text {
+            line-height: 24px;
+        }
+    }
+    .product {
+        &__card {
+            flex-basis: 100%;
+            margin-bottom: 30px;
+            align-items: center;
+        }
+        &__card-mobile-hide {
+            display: none;
+        }
+        &__card-img {
+            max-width: 370px;
+            img {
+                width: 370px;
+                height: 270px;
+            }
+        }
+        &__card-description {
+            max-width: 370px;
+            padding: 20px 20px 40px;
+        }
+    }
+    .newsletter {
+        &__wrapper {
+            padding: 0 30px 0;
+        }
+        &__information {
+            max-width: 100%;
+            padding-top: 30px;
+        }
+        &__text {
+            display: none;
+        }
+        &__email {
+            margin-top: 50px;
+        }
+    }
+}
+@media (max-width: 500px) {
+    body {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .section {
+        padding: 25px 0;
+    }
+    .section-margin {
+        padding: 25px 0;
+    }
+    .mobile-app {
+        padding: 75px 0;
+    }
+    .footer {
+        &__wrapper {
+            padding: 25px 0;
+        }
+    }
+    .header-top {
+        &__shopping-cart {
+            margin-left: 0;
+        }
+    }
+    .logo {
+        order: 1;
+        margin: 0 auto;
+    }
+    .menu-mobile {
+        order: -1;
+    }
+    .shopping-cart {
+        order: 2;
+    }
+    .button-link {
+        padding: 9px 50px 10px 13px;
+        &::after {
+            width: 30px;
+            height: 30px;
+        }
+    }
+    .header-bottom {
+        &__title {
+			font-size: 35px;
+			line-height: 40px;
+            margin: 35px 0 15px;
+		}
+        &__start {
+            margin: 0 auto 35px;
+        }
+        &__social {
+            margin: 0 auto 35px;
+        }
+        &__restaurant-img {
+			margin-bottom: 10px;
+		}
+    }
+    .how-to {
+        padding: 25px 0;
+    }
+    .reviews {
+        &__slider {
+            margin: 25px 0 75px;
+        }
+        &__slide-profile {
+            margin: 0 0 25px;
+        }
+        &__slide-text {
+            text-align: left;
+        }
+        &__dish {
+            width: 320px;
+            height: 280px;
+            img {
+                width: 320px;
+                height: 280px;
+            }
+        }
+        &__slider-buttons {
+            bottom: -30%;
+        }
+        &__slider-next {
+            right: 25%;
+        }
+        &__slider-prev {
+            left: 25%;
+        }
+    }
+    .newsletter {
+        &__wrapper {
+            height: 250px;
+        }
+        &__title {
+            font-size: 25px;
+            line-height: 25px;
+            margin-bottom: 0;
+        }
+        &__input {
+            height: 43px;
+            font-size: 13px;
+            line-height: 15px;
+            padding: 0 100px 0 20px;
+            &::placeholder {
+                font-size: 13px;
+                line-height: 15px;
+            }
+        }
+        &__button {
+            top: 4px;
+            right: 3px;
+            padding: 10px 12px;
+            font-size: 12px;
+            line-height: 13px;
+        }
+    }
+}
+@media (max-width: 400px) {
+    .product {
+        &__card-img {
+            width: 95%;
+            img {
+                width: 95%;
+                height: 95%;
+            }
+        }
+        &__card-description {
+            width: 95%;
+            padding: 20px 20px 40px;
+        }
+        &__show-more {
+            margin: 15px auto 0;
+        }
+    }
+}

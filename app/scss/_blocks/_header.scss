@@ -9,6 +9,9 @@
     justify-content: space-between;
     align-items: center;
     max-width: 850px;
+		&__shopping-cart {
+			margin-right: 20px;
+		}
 		&__button {
             font-family: 'ProductSans-Regular', sans-serif;
             font-weight: 400;

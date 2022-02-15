@@ -45,4 +45,11 @@ $(function () {
       },
     });
   });
+
+  $(".menu-mobile").on("click", function () {
+    $(".menu").toggleClass("menu--active");
+    $(".menu__item-link").on("click", function () {
+      $(".menu").removeClass("menu--active");
+    });
+  });
 });
