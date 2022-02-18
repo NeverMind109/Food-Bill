@@ -125,6 +125,90 @@ p {
         }
     }
 }
+.facebook-icon {
+    background: url('../images/facebook.svg') no-repeat;
+	background-position: center;
+	background-size: cover;
+	width: 40px;
+	height: 40px;
+}
+.instagram-icon {
+    background: url('../images/instagram.svg') no-repeat;
+	background-position: center;
+	background-size: cover;
+	width: 40px;
+	height: 40px;
+}
+.twitter-icon {
+    background: url('../images/twitter.svg') no-repeat;
+	background-position: center;
+	background-size: cover;
+	width: 40px;
+	height: 40px;
+}
+.linkedin-icon {
+	width: 40px;
+	height: 40px;
+	background: url('../images/linkedin.svg') no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+.time-icon {
+    background: url('../images/time-icon.svg') no-repeat;
+    background-position: center;
+	background-size: cover;
+    width: 40px;
+    height: 40px;
+}
+.location-icon {
+    background: url('../images/location-icon.svg') no-repeat;
+    background-position: center;
+	background-size: cover;
+    width: 40px;
+    height: 40px;
+}
+.call-icon {
+    background: url('../images/call-icon.svg') no-repeat;
+    background-position: center;
+	background-size: cover;
+    width: 40px;
+    height: 40px;
+}
+.quality-icon {
+    background: url('../images/quality-icon.svg') no-repeat;
+    background-position: center;
+	background-size: cover;
+    width: 80px;
+    height: 80px;
+}
+.healthy-icon {
+    background: url('../images/healthy-icon.svg') no-repeat;
+    background-position: center;
+	background-size: cover;
+    width: 80px;
+    height: 80px;
+}
+.fast-icon {
+    background: url('../images/fast-icon.svg') no-repeat;
+    background-position: center;
+	background-size: cover;
+    width: 80px;
+    height: 80px;
+}
+.google-play-icon {
+    background: url('../images/google-play-icon.svg') no-repeat;
+    background-position: center;
+	background-size: cover; 
+    width: 37px;
+    height: 40px;
+}
+.apple-store-icon {
+    background: url('../images/apple-store-icon.svg') no-repeat;
+    background-position: center;
+	background-size: cover;
+    width: 32px;
+    height: 40px;
+}
 .button-label {
     color: #FFFFFF;
     background: #F16214;
@@ -151,7 +235,7 @@ p {
 }
 label.newsletter-invalid{
     display: inline-block;
-    max-width: 400px;
+    max-width: 500px;
     color: #F16214;
     font-size: 15px;
     line-height: 17px;

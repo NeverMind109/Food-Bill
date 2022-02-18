@@ -258,7 +258,8 @@
         position: absolute;
         justify-content: center;
         padding-top: 15px;
-        height: 100vh;
+        max-height: 100vh;
+        height: auto;
         min-width: 320px;
         top: 100px;
         left:0;
@@ -296,6 +297,7 @@
         }
         &--active {
             transform: translateY(0);
+            overflow-y: scroll;
         }
     }
     .menu-mobile {

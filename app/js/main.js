@@ -69,16 +69,20 @@ $(function () {
 
   $(".menu-mobile").on("click", function () {
     $(".menu").toggleClass("menu--active");
-    document.body.classList.add("overflow-hidden");
+    $("body").toggleClass("overflow-hidden");
     $(".menu__item-link").on("click", function () {
       $(".menu").removeClass("menu--active");
-      document.body.classList.remove("overflow-hidden");
+      $("body").removeClass("overflow-hidden");
+    });
+    $(".logo").on("click", function () {
+      $(".menu").removeClass("menu--active");
+      $("body").removeClass("overflow-hidden");
     });
   });
 
   var openModalRegister = $("[data-toggle=register]");
-  var overlayClick = $(".modal-close");
-  var closeModalRegister = $(".modal-overlay");
+  var overlayClick = $(".modal-overlay");
+  var closeModalRegister = $(".modal-close");
   openModalRegister.on("click", openModal);
   closeModalRegister.on("click", closeModal);
   overlayClick.on("click", closeModal);
@@ -87,7 +91,7 @@ $(function () {
     var targetModal = $(this).attr("data-href");
     $(targetModal).find(".modal-overlay").addClass("modal-overlay--visible");
     $(targetModal).find(".modal-register").addClass("modal-register--visible");
-    document.body.classList.add("overflow-hidden");
+    $("body").toggleClass("overflow-hidden");
   }
   function closeModal(event) {
     event.preventDefault();
@@ -95,6 +99,6 @@ $(function () {
     var modalDialog = $(".modal-register");
     modalOverlay.removeClass("modal-overlay--visible");
     modalDialog.removeClass("modal-register--visible");
-    document.body.classList.remove("overflow-hidden");
+    $("body").removeClass("overflow-hidden");
   }
 });
